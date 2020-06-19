@@ -24,6 +24,9 @@
 /* ==========================================================================
 	Global Styles
 ========================================================================== */
+
+
+
 a {
 	color: #E04343;
 	-webkit-transition:all 0.5s;
@@ -79,7 +82,6 @@ audio,canvas,video {
 	*display:inline;
 	*zoom: 1;
 }
-* Remove excess height in iOS 5 devices. */
 audio:not([controls]) {
 	display:none;
 	height:0;
@@ -112,7 +114,6 @@ a:active,a:hover {
 	outline: 0;
 }
 /* ==========================================================================Typography========================================================================== */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
 h1 {
 	font-size:2em;
 	margin:0.67em 0;
@@ -238,7 +239,7 @@ legend {
 }
 button,input,select,textarea {
 	font-size:100%;
-	/margin:0;
+	margin:0;
 	vertical-align:baseline;
 	*vertical-align:middle;
 }
@@ -719,14 +720,14 @@ i.respons {
 	color:#fff;
 	background:rgba(0,0,0,1);
 }
-.portfolio img {
+.portfolio img { /* Setting ukuran portofolio */
 	height:300px;
 	width:100%;
 }
 img.grayscale {
 	filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
 	/* Firefox 3.5+,IE10 */ filter:gray;
-	/* IE6-9 */ -webkit-filter:grayscale(100%);
+	/* IE6-9 */ -webkit-filter:grayscale(0%);
 	/* Chrome 19+& Safari 6+*/ -webkit-transition:all .6s ease;
 	/* Fade to color for Chrome and Safari */ -webkit-backface-visibility:hidden;
 	/* Fix for transition flickering */
@@ -765,7 +766,8 @@ img.grayscale:hover {
 	display:block;
 	margin:0;
 	padding:0;
-	height:auto;
+	height:500;
+
 }
 .overlay {
 	display:block;
